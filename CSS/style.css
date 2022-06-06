@@ -1,11 +1,10 @@
- body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
      background-color: #e5e5e5;
      font-family: 'Roboto';
      font-style: normal;
 
  }
-
- /*Essa parte é responsavel pelo o topo*/
 
  header {
      background-color: #FFFFFF;
@@ -129,8 +128,8 @@
      margin-top: 54px;
      display: flex;
      justify-content: center;
+     position: relative;
  }
-
  .principal {
      width: 612px;
      margin-top: 34px;
@@ -204,7 +203,7 @@
  }
 
  .post {
-     height: 750px;
+     max-height: 750px;
      margin-bottom: 60px;
      background-color: #FFFFFF;
      box-sizing: border-box;
@@ -215,8 +214,13 @@
      width: 100%;
  }
 
+ .post video {
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
  .post .cabeca {
-     height: 8%;
+     height: 50px;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -273,6 +277,8 @@
      height: 450px;
      margin-left: 30px;
      margin-top: 34px;
+     position: fixed;
+     right: 15%;
 
  }
 
