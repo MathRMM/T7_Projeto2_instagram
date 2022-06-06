@@ -1,0 +1,409 @@
+ body {
+     background-color: #e5e5e5;
+     font-family: 'Roboto';
+     font-style: normal;
+
+ }
+
+ /*Essa parte é responsavel pelo o topo*/
+
+ header {
+     background-color: #FFFFFF;
+     border: 1px solid #dbdbdb;
+     width: 100%;
+     height: 54px;
+     top: 0px;
+     box-sizing: border-box;
+     display: flex;
+     justify-content: center;
+     position: fixed;
+     z-index: 5;
+ }
+
+ footer {
+     display: none;
+ }
+
+ p {
+     font-size: medium;
+
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ span {
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 16px;
+ }
+
+ h2 {
+
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 16px;
+ }
+
+ h3 {
+
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 16px;
+     color: #C7C7C7;
+ }
+
+ h4 {
+
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 16px;
+
+ }
+
+ .organizacao {
+     width: 930px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .logo {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 12vw;
+ }
+
+ .logo div {
+     margin-right: 10px;
+ }
+
+ .logo img {
+     width: 70%;
+     height: 20%;
+ }
+
+ .logo-instagram {
+     width: 100%;
+     height: 100%;
+ }
+
+ .logo-mobile {
+     display: none;
+
+ }
+
+ .barra {
+     height: 60%;
+     width: 1px;
+     background-color: #DBDBDB;
+ }
+
+ .pesquisa {
+     background: #FAFAFA;
+     border: 1px solid #DBDBDB;
+     box-sizing: border-box;
+     border-radius: 3px;
+     width: 20vw;
+     height: 2vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-self: center;
+ }
+
+ .icones {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 12vw;
+ }
+
+ .icone-mobile {
+     display: none;
+ }
+
+ .conteiner {
+     margin-top: 54px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .principal {
+     width: 612px;
+     margin-top: 34px;
+     overflow: hidden;
+ }
+
+ .stories {
+     background-color: #FFFFFF;
+     height: 118px;
+     border: 1px solid #dbdbdb;
+     box-sizing: content-box;
+     border-radius: 3px;
+     margin-bottom: 24px;
+     overflow-x: scroll;
+     display: flex;
+     align-items: center;
+     padding-left: 15px;
+     padding-right: 15px;
+     position: relative;
+ }
+
+ .stories::-webkit-scrollbar {
+     display: none;
+ }
+
+ ::-webkit-scrollbar-button:single-button:horizontal:increment {
+     scroll-behavior: smooth;
+ }
+
+ .story {
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+     margin-right: 15px;
+     position: relative;
+ }
+
+ .story img {
+     width: 50px;
+     height: 50px;
+     border-radius: 30px;
+
+     z-index: 2;
+ }
+
+ .story div {
+     display: flex;
+     justify-content: center;
+     width: 60px;
+ }
+
+ .story div img {
+     width: 56px;
+     height: 56px;
+     border-radius: 30px;
+     position: absolute;
+     z-index: 1;
+
+
+     top: -3px;
+ }
+
+ .arrow {
+     position: sticky;
+     z-index: 3;
+     background-color: #C7C7C7;
+     opacity: 0.5;
+     right: 10px;
+
+ }
+
+ .post {
+     height: 750px;
+     margin-bottom: 60px;
+     background-color: #FFFFFF;
+     box-sizing: border-box;
+ }
+
+ .post img {
+     aspect-ratio: 1/1;
+     width: 100%;
+ }
+
+ .post .cabeca {
+     height: 8%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+
+ .cabeca div {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .cabeca img {
+     width: 32px;
+     height: 32px;
+     border-radius: 16px;
+     margin-right: 10px;
+ }
+
+ .pe {
+     height: 10%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     margin-left: 20px;
+     margin-right: 20px;
+     padding-bottom: 10px;
+     box-sizing: border-box;
+ }
+
+ .pe .cima {
+     display: flex;
+     justify-content: space-between;
+     height: 20px;
+ }
+
+
+ .pe .baixo {
+     display: flex;
+     align-items: center;
+
+ }
+
+ .pe img {
+     width: 20px;
+     height: 20px;
+     border-radius: 16px;
+     margin-right: 10px;
+ }
+
+ .sidebar {
+     width: 293px;
+     height: 450px;
+     margin-left: 30px;
+     margin-top: 34px;
+
+ }
+
+ .sidebar img {
+     width: 50px;
+     height: 50px;
+     border-radius: 28px;
+     margin-right: 20px;
+
+ }
+
+ .sidebar .perfil {
+     height: 15%;
+     display: flex;
+     align-items: center;
+ }
+
+ .sidebar .sugestoes {
+     height: 70%;
+     margin-top: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-bottom: 20px;
+ }
+
+ .bloco {
+     position: relative;
+     display: flex;
+     margin-top: 16px;
+ }
+
+
+
+ .sugestoes img {
+     height: 32px;
+     width: 32px;
+ }
+
+ .sugestoes .texto {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .seguir {
+     position: absolute;
+     right: 0;
+ }
+
+ .sidebar .rodape {
+     height: 15%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .sobre {
+     margin-bottom: 15px;
+ }
+
+ @media (max-width: 935px) {
+
+     .conteiner {
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .organizacao {
+         width: 100%;
+         padding-left: 30px;
+         padding-right: 30px;
+     }
+
+     .sidebar,
+     .arrow {
+         display: none;
+     }
+
+
+
+ }
+
+ @media (max-width: 614px) {
+
+     footer {
+         display: inline;
+         background-color: #FFFFFF;
+         border: 1px solid #dbdbdb;
+         width: 100%;
+         height: 54px;
+         bottom: 0px;
+         box-sizing: border-box;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: fixed;
+     }
+
+     .pesquisa,
+     .icones,
+     .logo img,
+     .barra {
+         display: none;
+     }
+
+     .logo-mobile {
+         display: inline;
+         width: 20vw;
+         height: 2vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         align-self: center;
+     }
+
+     .post {
+         width: 100%;
+         margin-bottom: 60px;
+         background-color: #FFFFFF;
+     }
+
+     .icone-mobile {
+         display: flex;
+         justify-content: right;
+         align-items: center;
+         width: 12vw;
+     }
+
+     .stories {
+         background-color: #e5e5e5;
+         border: none;
+     }
+ }
